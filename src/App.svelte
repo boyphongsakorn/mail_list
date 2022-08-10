@@ -18,11 +18,14 @@
 
 <main>
   <table class="table">
-    <tr>
-      <th>ชื่อ</th>
-      <th>ชื่อเล่น</th>
-      <th>ที่อยู่</th>
-    </tr>
+    <thead>
+      <tr>
+        <th>ชื่อ</th>
+        <th>ชื่อเล่น</th>
+        <th>ที่อยู่</th>
+      </tr>
+    </thead>
+    <tbody>
     {#each list as player}
       <tr>
         <td>{player.name}</td>
@@ -30,6 +33,7 @@
         <td>{player.address}</td>
       </tr>
     {/each}
+    </tbody>
   </table>
   เพิ่มรายชื่อ
   <form action="https://mkrm.pwisetthon.com/list_add.php" method="post">
