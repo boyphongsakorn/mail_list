@@ -14,10 +14,11 @@
     document.getElementById('formedit').style.display = 'block';
     document.getElementById('formadd').style.display = 'none';
     document.getElementById('id').value = id;
-    document.getElementById('name').value = list[id].name;
-    document.getElementById('nickname').value = list[id].nickname;
-    document.getElementById('address').value = list[id].address;
-  }
+    //find index of id in list
+    var index = list.findIndex(x => x.id == id);
+    document.getElementById('name').value = list[index].name;
+    document.getElementById('nickname').value = list[index].nickname;
+    document.getElementById('address').value = list[index].address;
 </script>
 
 <svelte:head>
