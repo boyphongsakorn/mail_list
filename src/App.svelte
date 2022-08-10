@@ -19,6 +19,7 @@
     document.getElementById('name').value = list[index].name;
     document.getElementById('nickname').value = list[index].nickname;
     document.getElementById('address').value = list[index].address;
+  }
 </script>
 
 <svelte:head>
