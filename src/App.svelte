@@ -36,7 +36,7 @@
     <input type="text" name="name" placeholder="Name" class="form-control">
     <input type="text" name="nickname" placeholder="Nickname" class="form-control">
     <input type="text" name="address" placeholder="Address" class="form-control">
-    <input type="submit" value="Add">
+    <input type="submit" value="Add" class="btn btn-primary">
   </form>
 </main>
 
