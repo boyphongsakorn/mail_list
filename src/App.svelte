@@ -13,7 +13,7 @@
 
 <svelte:head>
 	<title>Hello world</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </svelte:head>
 
 <main>
@@ -33,9 +33,9 @@
   </table>
   เพิ่มรายชื่อ
   <form action="https://mkrm.pwisetthon.com/list_add.php" method="post">
-    <input type="text" name="name" placeholder="Name">
-    <input type="text" name="nickname" placeholder="Nickname">
-    <input type="text" name="address" placeholder="Address">
+    <input type="text" name="name" placeholder="Name" class="form-control">
+    <input type="text" name="nickname" placeholder="Nickname" class="form-control">
+    <input type="text" name="address" placeholder="Address" class="form-control">
     <input type="submit" value="Add">
   </form>
 </main>
