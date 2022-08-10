@@ -45,7 +45,7 @@
 </main>
 
 <style>
-  /*table {
+  table {
     border-collapse: collapse;
     border: 1px solid #ccc;
   }
@@ -62,5 +62,5 @@
     border-collapse: collapse;
     border: 1px solid #ccc;
     padding: 5px;
-  }*/
+  }
 </style>
