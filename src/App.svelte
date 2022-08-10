@@ -16,6 +16,7 @@
     document.getElementById('id').value = id;
     //find index of id in list
     var index = list.findIndex(x => x.id == id);
+    console.log(index);
     document.getElementById('name').value = list[index].name;
     document.getElementById('nickname').value = list[index].nickname;
     document.getElementById('address').value = list[index].address;
