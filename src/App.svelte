@@ -17,7 +17,7 @@
 </svelte:head>
 
 <main>
-  <table>
+  <table class="table">
     <tr>
       <th>ชื่อ</th>
       <th>ชื่อเล่น</th>
@@ -41,7 +41,7 @@
 </main>
 
 <style>
-  table {
+  /*table {
     border-collapse: collapse;
     border: 1px solid #ccc;
   }
@@ -58,5 +58,5 @@
     border-collapse: collapse;
     border: 1px solid #ccc;
     padding: 5px;
-  }
+  }*/
 </style>
