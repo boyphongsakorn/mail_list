@@ -10,9 +10,13 @@
     list = data;
   })();
   function edit(id) {
+    //order list but get id first
     document.getElementById('formedit').style.display = 'block';
     document.getElementById('formadd').style.display = 'none';
     document.getElementById('id').value = id;
+    document.getElementById('name').value = list[id].name;
+    document.getElementById('nickname').value = list[id].nickname;
+    document.getElementById('address').value = list[id].address;
   }
 </script>
 
