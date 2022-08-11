@@ -17,9 +17,9 @@
     //find index of id in list
     var index = list.findIndex(x => x.id == id);
     console.log(index);
-    document.getElementById('name').value = list[index].name;
-    document.getElementById('nickname').value = list[index].nickname;
-    document.getElementById('address').value = list[index].address;
+    document.getElementById('editname').value = list[index].name;
+    document.getElementById('editnickname').value = list[index].nickname;
+    document.getElementById('editaddress').value = list[index].address;
   }
 </script>
 
@@ -31,9 +31,9 @@
 <main>
   <form action="https://mkrm.pwisetthon.com/list_edit.php" method="post" id="formedit" style="display: none;">
     <input type="hidden" name="id" id="id" value="">
-    <input type="text" name="name" placeholder="Name" class="form-control">
-    <input type="text" name="nickname" placeholder="Nickname" class="form-control">
-    <input type="text" name="address" placeholder="Address" class="form-control">
+    <input type="text" name="editname" placeholder="Name" class="form-control">
+    <input type="text" name="editnickname" placeholder="Nickname" class="form-control">
+    <input type="text" name="editaddress" placeholder="Address" class="form-control">
     <input type="submit" value="Add" class="btn btn-primary">
   </form>
   <table class="table">
