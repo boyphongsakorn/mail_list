@@ -37,9 +37,9 @@
 <main>
   <form action="https://mkrm.pwisetthon.com/list_edit.php" method="post" id="formedit" style="display: none;">
     <input type="hidden" name="id" id="id" value="">
-    <input type="text" name="editname" placeholder="Name" class="form-control">
-    <input type="text" name="editnickname" placeholder="Nickname" class="form-control">
-    <input type="text" name="editaddress" placeholder="Address" class="form-control">
+    <input type="text" name="name" id="editname" placeholder="ชื่อ" class="form-control">
+    <input type="text" name="nickname" id="editnickname" placeholder="ชื่อเล่น" class="form-control">
+    <input type="text" name="address" id="editaddress" placeholder="ที่อยู่" class="form-control">
     <input type="submit" value="Add" class="btn btn-primary">
   </form>
   <table class="table">
