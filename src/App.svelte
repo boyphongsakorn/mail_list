@@ -16,6 +16,12 @@
     document.getElementById('id').value = id;
     //find index of id in list
     var index = list.findIndex(x => x.id == id);
+    //move list[index] to list[0]
+    var temp = list[index];
+    //add temp to front of list
+    list.unshift(temp);
+    //remove temp from list
+    list.splice(index + 1, 1);
     console.log(index);
     document.getElementById('editname').value = list[index].name;
     document.getElementById('editnickname').value = list[index].nickname;
