@@ -57,6 +57,7 @@
         <td>{player.name}</td>
         <td>{player.nickname}</td>
         <td>{player.address}</td>
+        <td>{#if player.printed == 0}❎{:else}✅{/if}</td>
         <td>
           <button class="btn btn-primary" on:click={() => edit(player.id)}>แก้ไข</button>
         </td>
