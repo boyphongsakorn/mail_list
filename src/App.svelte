@@ -27,6 +27,9 @@
     document.getElementById('editnickname').value = list[index].nickname;
     document.getElementById('editaddress').value = list[index].address;
   }
+  function onlynotprinted() {
+    list = list.filter(x => x.printed == 0);
+  }
 </script>
 
 <svelte:head>
@@ -42,12 +45,14 @@
     <input type="text" name="address" id="editaddress" placeholder="ที่อยู่" class="form-control">
     <input type="submit" value="Add" class="btn btn-primary">
   </form>
+  <button on:click={() => onlynotprinted()} class="btn btn-primary">แสดงเฉพาะที่ยังไม่ปริ้น</button>
   <table class="table">
     <thead>
       <tr>
         <th>ชื่อ</th>
         <th>ชื่อเล่น</th>
         <th>ที่อยู่</th>
+        <th>สถานะการปริ้น</th>
         <th>แก้ไข</th>
       </tr>
     </thead>
