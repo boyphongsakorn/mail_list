@@ -30,6 +30,10 @@
   function onlynotprinted() {
     list = list.filter(x => x.printed == 0);
   }
+  function add() {
+    document.getElementById('formedit').style.display = 'none';
+    document.getElementById('formadd').style.display = 'block';
+  }
 </script>
 
 <svelte:head>
@@ -70,7 +74,7 @@
     {/each}
     </tbody>
   </table>
-  เพิ่มรายชื่อ
+  <button on:click={() => add()} class="btn btn-primary">เพิ่ม</button>
   <form action="https://mkrm.pwisetthon.com/list_add.php" method="post" id="formadd" style="display: none;">
     <input type="text" name="name" placeholder="Name" class="form-control">
     <input type="text" name="nickname" placeholder="Nickname" class="form-control">
