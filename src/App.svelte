@@ -65,12 +65,12 @@
     </tbody>
   </table>
   เพิ่มรายชื่อ
-  <form action="https://mkrm.pwisetthon.com/list_add.php" method="post" id="formadd">
+  <!--form action="https://mkrm.pwisetthon.com/list_add.php" method="post" id="formadd">
     <input type="text" name="name" placeholder="Name" class="form-control">
     <input type="text" name="nickname" placeholder="Nickname" class="form-control">
     <input type="text" name="address" placeholder="Address" class="form-control">
     <input type="submit" value="Add" class="btn btn-primary">
-  </form>
+  </form-->
 </main>
 
 <style>
